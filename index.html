@@ -57,10 +57,9 @@
 
         #categories {
             margin: 20px;
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: center;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+            gap: 20px; /* space between the cards */
         }
 
         .category-card {
@@ -102,12 +101,6 @@
             padding: 5px;
             color: rgb(182, 27, 27);
         }
-        .categories-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* space between the cards */
-    justify-content: space-between; /* align items horizontally */
-}
     </style>
 </head>
 <body>
@@ -153,7 +146,7 @@
     </div>
 
     <h2>NON-ACADEMIC GENRES</h2>
-    <div id="categories" class="categories-container"></div>
+    <div id="categories">
         <div class="category-card" onclick="window.location.href='fiction.html'">
             <img src="https://img.freepik.com/free-vector/childs-story-book_1051-545.jpg" alt="Fiction">
             <p>Fiction</p>
