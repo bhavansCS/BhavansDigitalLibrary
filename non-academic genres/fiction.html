@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fiction</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7a0;
+            text-align: center;
+        }
+
+        header {
+            font-size: 20px;
+            padding: 10px;
+            background-color: #e9ba2a;
+            color: white;
+        }
+
+        #books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-card {
+            width: 325px;
+            padding: 10px;
+            background-color: white;
+            border: 2px solid #e9ba2a;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 275px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .book-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .book-info {
+            margin-top: 10px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fiction </h1>
+    </header>
+
+    <div id="books-container">
+        <div class="book-card">
+            <a href="https://archive.org/details/adventureofsherl0000unse/page/n9/mode/2up?ref=ol&view=theater" target="_blank">
+                <img src="https://covers.openlibrary.org/b/id/6717853-M.jpg" alt="Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Book:</b>  Adventures of Sberlock Nolmes</p>
+                <p><b>Author:</b>  A. CONAN DOYLE</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://archive.org/details/anneofgreengable0000unse_p0z0/page/n7/mode/2up?ref=ol&view=theater" target="_blank">
+                <img src="https://covers.openlibrary.org/b/id/14641084-M.jpg?default=https://openlibrary.org/images/icons/avatar_book.png" alt="Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Book:</b> ANNE OF GREEN GABLES</p>
+                <p><b>Author:</b> L. M. MONTGOMERY</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://archive.org/details/timemachineinven00welluoft/page/n9/mode/2up?ref=ol&view=theater" target="_blank">
+                <img src="https://covers.openlibrary.org/b/id/9009316-M.jpg?default=https://openlibrary.org/images/icons/avatar_book.png" alt="Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Book:</b> Time Machine</p>
+                <p><b>Author:</b> H.G. Wells</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
