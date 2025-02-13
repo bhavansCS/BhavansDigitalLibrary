@@ -102,6 +102,12 @@
             padding: 5px;
             color: rgb(182, 27, 27);
         }
+        .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between the cards */
+    justify-content: space-between; /* align items horizontally */
+}
     </style>
 </head>
 <body>
@@ -147,7 +153,7 @@
     </div>
 
     <h2>NON-ACADEMIC GENRES</h2>
-    <div id="categories"></div>
+    <div id="categories" class="categories-container"></div>
         <div class="category-card" onclick="window.location.href='fiction.html'">
             <img src="https://img.freepik.com/free-vector/childs-story-book_1051-545.jpg" alt="Fiction">
             <p>Fiction</p>
@@ -156,13 +162,13 @@
             <img src="https://img.freepik.com/free-vector/frame-with-student-boy-reading-book_25030-39037.jpg" alt="Biography">
             <p>Biography</p>
         </div>
-        <div class="category-card" onclick="window.location.href='self-help.html'">
-            <img src="https://img.freepik.com/free-vector/home-study-room-with-books_25030-38882.jpg" alt="Self-Help">
-            <p>Self-Help</p>
-        </div>
         <div class="category-card" onclick="window.location.href='philosophy.html'">
             <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-poetry-illustration_23-2149279810.jpg" alt="Philosophy">
             <p>Philosophy</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='self-help.html'">
+            <img src="https://img.freepik.com/free-vector/home-study-room-with-books_25030-38882.jpg" alt="Self-Help">
+            <p>Self-Help</p>
         </div>
     </div>
 </body>
