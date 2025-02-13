@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First-Year Computer Science</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7a0;
+            text-align: center;
+        }
+
+        header {
+            font-size: 20px;
+            padding: 10px;
+            background-color: #e9ba2a;
+            color: white;
+        }
+
+        #books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-card {
+            width: 325px;
+            padding: 10px;
+            background-color: white;
+            border: 2px solid #e9ba2a;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 275px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .book-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .book-info {
+            margin-top: 10px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>First-Year Computer Science </h1>
+    </header>
+
+    <div id="books-container">
+        <div class="book-card">
+            <a href="https://www.anandinstitute.org/pdf/Balaguruswamy%20Object%20Oriented%20Programming%20With%20C++%20Fourth%20Edition%20(3).pdf" target="_blank">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/book/0/7/6/object-orient-progamming-with-c-4ed-original-imad76yscmcexc9m.jpeg?q=90&crop=false" alt="Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b> C++</p>
+                <p><b>Book:</b>  Object Oriented Programming with C++(fourth edition)</p>
+                <p><b>Author:</b>  E Balaguruswami</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://tfetimes.com/wp-content/uploads/2015/09/Mastering-C-By-KR-Venugopal-1.pdf" target="_blank">
+                <img src="https://freecomputerbooks.com/covers/Mastering-Cpp-By-Venugopal.jpg" alt="Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b>C++ </p>
+                <p><b>Book:</b> Mastering C++</p>
+                <p><b>Author:</b> K.R.Venugopal, Rajkumar Buyya, T. Ravishankar</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://books-library.net/files/books-library.net-10301710Pl1R8.pdf" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw7uFcz4RwOo0WfpDTk7vgdWi_s-4yT4h0YQ&s" alt="Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b> DATA SCIENCE & ANALYSIS MINOR</p>
+                <p><b>Book:</b> Practical Data Science with R.</p>
+                <p><b>Author:</b> Nina Zumel, John Mount</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
